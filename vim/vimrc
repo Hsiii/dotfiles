@@ -7,6 +7,9 @@ set mouse=a
 " Highlight the current cursor line for easier navigation.
 set cursorline
 
+" Keep the sign column stable for Git and diagnostics markers.
+set signcolumn=yes
+
 " Always show the status line for editor and file context.
 set laststatus=2
 set statusline=%f\ %m%r%h%w%=%y\ %{&fileencoding?&fileencoding:&encoding}\ [%l:%c]\ %p%%
@@ -21,6 +24,9 @@ set splitbelow
 
 " Allow switching away from modified buffers without saving first.
 set hidden
+
+" Refresh async editor feedback quickly, including GitGutter signs.
+set updatetime=100
 
 " Use the system clipboard for yank, delete, change, and paste operations.
 set clipboard=unnamedplus
