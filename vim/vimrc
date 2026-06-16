@@ -21,3 +21,8 @@ set autoindent
 
 " Load filetype-specific plugins and indentation rules.
 filetype plugin indent on
+
+" Enable syntax highlighting and true-color terminal themes.
+syntax on
+set termguicolors
+colorscheme rosepine_moon

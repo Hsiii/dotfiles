@@ -1,0 +1,3 @@
+[submodule "vim/pack/themes/start/rose-pine"]
+	path = vim/pack/themes/start/rose-pine
+	url = https://github.com/rose-pine/vim.git
