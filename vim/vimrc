@@ -43,6 +43,9 @@ set splitbelow
 " Allow switching away from modified buffers without saving first.
 set hidden
 
+" Ask before abandoning unsaved edits.
+set confirm
+
 " Reload files changed outside Vim when it is safe to do so.
 set autoread
 
