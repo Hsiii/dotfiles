@@ -22,6 +22,13 @@ set autoindent
 " Load filetype-specific plugins and indentation rules.
 filetype plugin indent on
 
+" Use vim-move for VS Code-style line and selection movement.
+let g:move_map_keys = 0
+nmap <A-Down> <Plug>MoveLineDown
+nmap <A-Up> <Plug>MoveLineUp
+xmap <A-Down> <Plug>MoveBlockDown
+xmap <A-Up> <Plug>MoveBlockUp
+
 " Enable syntax highlighting and true-color terminal themes.
 syntax on
 set termguicolors

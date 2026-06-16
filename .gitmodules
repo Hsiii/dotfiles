@@ -1,3 +1,6 @@
 [submodule "vim/pack/themes/start/rose-pine"]
 	path = vim/pack/themes/start/rose-pine
 	url = https://github.com/rose-pine/vim.git
+[submodule "vim/pack/plugins/start/vim-move"]
+	path = vim/pack/plugins/start/vim-move
+	url = https://github.com/matze/vim-move.git
