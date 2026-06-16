@@ -95,6 +95,8 @@ nmap <A-Down> <Plug>MoveLineDown
 nmap <A-Up> <Plug>MoveLineUp
 xmap <A-Down> <Plug>MoveBlockDown
 xmap <A-Up> <Plug>MoveBlockUp
+imap <A-Down> <Esc><Plug>MoveLineDowngi
+imap <A-Up> <Esc><Plug>MoveLineUpgi
 
 " Save files with the common editor shortcut.
 nnoremap <C-s> :write<CR>
