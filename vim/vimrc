@@ -6,3 +6,6 @@ set mouse=a
 
 " Highlight the current cursor line for easier navigation.
 set cursorline
+
+" Always show the status line for editor and file context.
+set laststatus=2
