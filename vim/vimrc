@@ -1,2 +1,5 @@
 " Show absolute line numbers in the left gutter.
 set number
+
+" Enable mouse support for cursor movement, selection, scrolling, and splits.
+set mouse=a
