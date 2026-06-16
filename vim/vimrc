@@ -13,6 +13,12 @@ set laststatus=2
 " Use the system clipboard for yank, delete, change, and paste operations.
 set clipboard=unnamedplus
 
+" Make search interactive, highlighted, and smart about casing.
+set ignorecase
+set smartcase
+set incsearch
+set hlsearch
+
 " Use real tab characters and display each tab as four columns.
 set noexpandtab
 set tabstop=4
