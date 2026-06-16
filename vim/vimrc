@@ -17,6 +17,9 @@ set signcolumn=yes
 set laststatus=2
 set statusline=%f\ %m%r%h%w%=%y\ %{&fileencoding?&fileencoding:&encoding}\ [%l:%c]\ %p%%
 
+" Show partial normal-mode commands while typing them.
+set showcmd
+
 " Improve command-line completion for files, buffers, commands, and options.
 set wildmenu
 set wildmode=longest:full,full
