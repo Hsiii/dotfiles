@@ -18,6 +18,9 @@ set wildmode=longest:full,full
 set splitright
 set splitbelow
 
+" Allow switching away from modified buffers without saving first.
+set hidden
+
 " Use the system clipboard for yank, delete, change, and paste operations.
 set clipboard=unnamedplus
 
