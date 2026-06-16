@@ -3,3 +3,6 @@ set number
 
 " Enable mouse support for cursor movement, selection, scrolling, and splits.
 set mouse=a
+
+" Highlight the current cursor line for easier navigation.
+set cursorline
