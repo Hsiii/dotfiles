@@ -33,7 +33,7 @@ filetype plugin indent on
 " Windows and buffers
 set splitright
 set splitbelow
-set hidden
+set nohidden
 set confirm
 set autoread
 
