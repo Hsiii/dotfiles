@@ -9,3 +9,9 @@ set cursorline
 
 " Always show the status line for editor and file context.
 set laststatus=2
+
+" Use real tab characters and display each tab as four columns.
+set noexpandtab
+set tabstop=4
+set shiftwidth=4
+set softtabstop=0
