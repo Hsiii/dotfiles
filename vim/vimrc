@@ -62,6 +62,11 @@ nmap <A-Up> <Plug>MoveLineUp
 xmap <A-Down> <Plug>MoveBlockDown
 xmap <A-Up> <Plug>MoveBlockUp
 
+" Save files with the common editor shortcut.
+nnoremap <C-s> :write<CR>
+inoremap <C-s> <Esc>:write<CR>gi
+xnoremap <C-s> <Esc>:write<CR>gv
+
 " Enable syntax highlighting and true-color terminal themes.
 syntax on
 set termguicolors
