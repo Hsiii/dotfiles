@@ -10,6 +10,10 @@ set cursorline
 " Always show the status line for editor and file context.
 set laststatus=2
 
+" Improve command-line completion for files, buffers, commands, and options.
+set wildmenu
+set wildmode=longest:full,full
+
 " Use the system clipboard for yank, delete, change, and paste operations.
 set clipboard=unnamedplus
 
