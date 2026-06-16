@@ -30,6 +30,9 @@ set completeopt=menuone,noselect
 " Make Backspace behave like a modern editor in insert mode.
 set backspace=indent,eol,start
 
+" Let horizontal cursor movement cross line boundaries.
+set whichwrap+=<,>,h,l,[,]
+
 " Open new splits in the same direction as modern editor panes.
 set splitright
 set splitbelow
