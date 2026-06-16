@@ -14,6 +14,10 @@ set laststatus=2
 set wildmenu
 set wildmode=longest:full,full
 
+" Open new splits in the same direction as modern editor panes.
+set splitright
+set splitbelow
+
 " Use the system clipboard for yank, delete, change, and paste operations.
 set clipboard=unnamedplus
 
