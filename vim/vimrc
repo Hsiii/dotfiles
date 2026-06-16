@@ -9,6 +9,7 @@ set cursorline
 
 " Always show the status line for editor and file context.
 set laststatus=2
+set statusline=%f\ %m%r%h%w%=%y\ %{&fileencoding?&fileencoding:&encoding}\ [%l:%c]\ %p%%
 
 " Improve command-line completion for files, buffers, commands, and options.
 set wildmenu
