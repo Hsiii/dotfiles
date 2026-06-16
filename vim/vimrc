@@ -61,6 +61,10 @@ set hlsearch
 set linebreak
 set breakindent
 
+" Keep context around the cursor while scrolling.
+set scrolloff=8
+set sidescrolloff=8
+
 " Use real tab characters and display each tab as four columns.
 set noexpandtab
 set tabstop=4
