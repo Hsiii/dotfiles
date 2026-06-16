@@ -1,96 +1,65 @@
-" Show absolute line numbers in the left gutter.
+" UI
 set number
-
-" Enable mouse support for cursor movement, selection, scrolling, and splits.
-set mouse=a
-
-" Highlight the current cursor line for easier navigation.
 set cursorline
-
-" Briefly show matching brackets when typing a closing bracket.
 set showmatch
-
-" Keep the sign column stable for Git and diagnostics markers.
 set signcolumn=yes
-
-" Always show the status line for editor and file context.
 set laststatus=2
 set statusline=%f\ %m%r%h%w%=%y\ %{&fileencoding?&fileencoding:&encoding}\ [%l:%c]\ %p%%
-
-" Show partial normal-mode commands while typing them.
 set showcmd
-
-" Improve command-line completion for files, buffers, commands, and options.
 set wildmenu
 set wildmode=longest:full,full
 
-" Show completion menus without preselecting an item.
+" Theme
+syntax on
+set termguicolors
+colorscheme rosepine_moon
+
+" Editing
+set mouse=a
 set completeopt=menuone,noselect
-
-" Make Backspace behave like a modern editor in insert mode.
 set backspace=indent,eol,start
-
-" Let horizontal cursor movement cross line boundaries.
 set whichwrap+=<,>,h,l,[,]
-
-" Allow rectangular selections to extend past shorter line endings.
 set virtualedit=block
-
-" Open new splits in the same direction as modern editor panes.
-set splitright
-set splitbelow
-
-" Allow switching away from modified buffers without saving first.
-set hidden
-
-" Ask before abandoning unsaved edits.
-set confirm
-
-" Reload files changed outside Vim when it is safe to do so.
-set autoread
-
-" Refresh async editor feedback quickly, including GitGutter signs.
-set updatetime=100
-
-" Use the system clipboard for yank, delete, change, and paste operations.
 set clipboard=unnamedplus
 
-" Keep undo history across Vim sessions outside the dotfiles repository.
+" Indentation
+set noexpandtab
+set tabstop=4
+set shiftwidth=4
+set softtabstop=0
+set autoindent
+filetype plugin indent on
+
+" Windows and buffers
+set splitright
+set splitbelow
+set hidden
+set confirm
+set autoread
+
+" Files and state
 set undofile
 set undodir=~/.local/state/vim/undo
-
-" Keep backup and swap files out of project directories.
 set backupdir=~/.local/state/vim/backup//
 set directory=~/.local/state/vim/swap//
 
-" Make search interactive, highlighted, and smart about casing.
+" Search
 set ignorecase
 set smartcase
 set incsearch
 set hlsearch
 
-" Wrap long visual lines at word boundaries and preserve indentation.
+" Display
 set linebreak
 set breakindent
-
-" Keep context around the cursor while scrolling.
 set scrolloff=8
 set sidescrolloff=8
 
-" Use real tab characters and display each tab as four columns.
-set noexpandtab
-set tabstop=4
-set shiftwidth=4
-set softtabstop=0
-
-" Continue the previous line's indentation on new lines.
-set autoindent
-
-" Load filetype-specific plugins and indentation rules.
-filetype plugin indent on
-
-" Use vim-move for VS Code-style line and selection movement.
+" Plugins
 let g:move_map_keys = 0
+set updatetime=100
+
+" Mappings
 nmap <A-Down> <Plug>MoveLineDown
 nmap <A-Up> <Plug>MoveLineUp
 xmap <A-Down> <Plug>MoveBlockDown
@@ -98,12 +67,6 @@ xmap <A-Up> <Plug>MoveBlockUp
 imap <A-Down> <Esc><Plug>MoveLineDowngi
 imap <A-Up> <Esc><Plug>MoveLineUpgi
 
-" Save files with the common editor shortcut.
 nnoremap <C-s> :write<CR>
 inoremap <C-s> <Esc>:write<CR>gi
 xnoremap <C-s> <Esc>:write<CR>gv
-
-" Enable syntax highlighting and true-color terminal themes.
-syntax on
-set termguicolors
-colorscheme rosepine_moon
