@@ -19,6 +19,10 @@ set smartcase
 set incsearch
 set hlsearch
 
+" Wrap long visual lines at word boundaries and preserve indentation.
+set linebreak
+set breakindent
+
 " Use real tab characters and display each tab as four columns.
 set noexpandtab
 set tabstop=4
