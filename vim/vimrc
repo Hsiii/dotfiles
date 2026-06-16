@@ -13,6 +13,10 @@ set laststatus=2
 " Use the system clipboard for yank, delete, change, and paste operations.
 set clipboard=unnamedplus
 
+" Keep undo history across Vim sessions outside the dotfiles repository.
+set undofile
+set undodir=~/.local/state/vim/undo
+
 " Make search interactive, highlighted, and smart about casing.
 set ignorecase
 set smartcase
