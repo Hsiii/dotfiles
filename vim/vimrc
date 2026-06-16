@@ -15,3 +15,6 @@ set noexpandtab
 set tabstop=4
 set shiftwidth=4
 set softtabstop=0
+
+" Continue the previous line's indentation on new lines.
+set autoindent
