@@ -31,6 +31,9 @@ set splitbelow
 " Allow switching away from modified buffers without saving first.
 set hidden
 
+" Reload files changed outside Vim when it is safe to do so.
+set autoread
+
 " Refresh async editor feedback quickly, including GitGutter signs.
 set updatetime=100
 
