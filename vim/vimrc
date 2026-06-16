@@ -10,6 +10,9 @@ set cursorline
 " Always show the status line for editor and file context.
 set laststatus=2
 
+" Use the system clipboard for yank, delete, change, and paste operations.
+set clipboard=unnamedplus
+
 " Use real tab characters and display each tab as four columns.
 set noexpandtab
 set tabstop=4
