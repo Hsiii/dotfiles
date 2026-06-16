@@ -30,7 +30,7 @@ Uses true-color terminal rendering with Rose Pine Moon. The theme is managed as 
 
 ### Editing
 
-Enables mouse support, system clipboard integration, modern Backspace behavior, line-boundary cursor wrapping, visual-block selection past short lines, and completion menu behavior without preselecting items. These settings reduce old Vim rough edges during plain text editing.
+Enables mouse support, system clipboard integration, modern Backspace behavior, line-boundary cursor wrapping with one-past-end movement, visual-block selection past short lines, and completion menu behavior without preselecting items. These settings reduce old Vim rough edges during plain text editing.
 
 ### Indentation
 

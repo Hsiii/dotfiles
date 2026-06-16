@@ -19,7 +19,7 @@ set mouse=a
 set completeopt=menuone,noselect
 set backspace=indent,eol,start
 set whichwrap+=<,>,h,l,[,]
-set virtualedit=block
+set virtualedit=block,onemore
 set clipboard=unnamedplus
 
 " Indentation
