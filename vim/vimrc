@@ -7,6 +7,9 @@ set mouse=a
 " Highlight the current cursor line for easier navigation.
 set cursorline
 
+" Briefly show matching brackets when typing a closing bracket.
+set showmatch
+
 " Keep the sign column stable for Git and diagnostics markers.
 set signcolumn=yes
 
