@@ -27,6 +27,9 @@ set wildmode=longest:full,full
 " Show completion menus without preselecting an item.
 set completeopt=menuone,noselect
 
+" Make Backspace behave like a modern editor in insert mode.
+set backspace=indent,eol,start
+
 " Open new splits in the same direction as modern editor panes.
 set splitright
 set splitbelow
