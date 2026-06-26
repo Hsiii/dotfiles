@@ -5,16 +5,16 @@ Small Vim-focused dotfiles setup for a terminal editor that feels closer to a mo
 ## Layout
 
 - `vim/vimrc` is the tracked Vim config.
-- `~/.vimrc` symlinks to `~/dotfiles/vim/vimrc`.
-- `~/.vim` symlinks to `~/dotfiles/vim` so Vim native packages load from this repo.
+- `~/.vimrc` symlinks to `~/Projects/DevTools/dotfiles/vim/vimrc`.
+- `~/.vim` symlinks to `~/Projects/DevTools/dotfiles/vim` so Vim native packages load from this repo.
 - Plugins and themes are Git submodules under `vim/pack/**/start`.
 
 ## Restore
 
 ```sh
-git clone --recurse-submodules https://github.com/Hsiii/dotfiles.git ~/dotfiles
-ln -s ~/dotfiles/vim/vimrc ~/.vimrc
-ln -s ~/dotfiles/vim ~/.vim
+git clone --recurse-submodules https://github.com/Hsiii/dotfiles.git ~/Projects/DevTools/dotfiles
+ln -s ~/Projects/DevTools/dotfiles/vim/vimrc ~/.vimrc
+ln -s ~/Projects/DevTools/dotfiles/vim ~/.vim
 mkdir -p ~/.local/state/vim/undo ~/.local/state/vim/backup ~/.local/state/vim/swap
 ```
 
