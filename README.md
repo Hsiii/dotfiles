@@ -18,8 +18,6 @@ ln -s ~/.dotfiles/vim ~/.vim
 mkdir -p ~/.local/state/vim/undo ~/.local/state/vim/backup ~/.local/state/vim/swap
 ```
 
-My local checkout lives at `~/Projects/DevTools/dotfiles`; use any path you prefer and point the two symlinks at it.
-
 ## Vim Config Coverage
 
 ### UI
